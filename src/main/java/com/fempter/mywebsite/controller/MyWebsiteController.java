@@ -14,8 +14,8 @@ public class MyWebsiteController {
 
     @GetMapping("/")
     public String helloMessage(Model model) {
-        model.addAttribute("message", message);
-        return "hello-world"; //view name
+        //model.addAttribute("message", message);
+        return "index"; //view name
     }
 
     // pass some parameter like /hello?name=thymeleaf
