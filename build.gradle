@@ -1,22 +1,9 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-
-    ext {
-        springBootVersion = '2.6.2'
-    }
-
-    dependencies {
-        classpath 'org.springframework.boot:spring-boot-gradle-plugin:' + springBootVersion //plugin version
-    }
-
+plugins {
+    id 'org.springframework.boot' version '2.6.2'
+    id 'java'
+    id 'idea'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 }
-
-apply plugin: 'java'
-apply plugin: 'idea'
-apply plugin: 'io.spring.dependency-management'
-apply plugin: 'org.springframework.boot'
 
 group = 'com.fempter'
 version = '0.0.1-SNAPSHOT'
