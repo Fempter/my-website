@@ -38,16 +38,18 @@ h1, h2, h3, h4 {
 
 .links-and-contact {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 50% 50%;
 }
 
 .links {
-    justify-self: center;
+    text-align: center;
 }
 
 .links-list {
     list-style: none;
     padding: 0;
+    display: grid;
+    row-gap: 20px;
 }
 
 .profile-picture {
@@ -88,6 +90,10 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
+.copyright {
+    text-align: center;
+}
+
 @media (max-width: 480px) {
     .about-grid {
         grid-template-columns: 100%;
@@ -98,6 +104,10 @@ hr {
     .links-and-contact {
         grid-template-columns: 100%;
     }
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
 }
 
 .myClass::after {
