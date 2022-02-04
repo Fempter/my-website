@@ -18,6 +18,10 @@ function clickListener(event) {
         console.log('The email address must contain @');
         return false;
     }
+    let alert = "Hey " + emailText + ". Thanks for your message: \"" + messageText + "\"\n\n"
+        + "Email send function is not implemented yet, therefore it will be not sent."
+
+    window.alert(alert);
     console.log('Thanks for your message:', messageText);
 }
 
