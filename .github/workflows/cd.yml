@@ -1,0 +1,15 @@
+name: Deploy to VPS
+
+on:
+  workflow_run:
+    workflows:
+      - 'Java CI'
+    types:
+      - completed
+jobs:
+  deploy:
+    name: SCP files to server
+    runs-on: ubuntu-latest
+    steps:
+      - name: SCP files via SSH key
+        uses: appleboy/scp-action@master
