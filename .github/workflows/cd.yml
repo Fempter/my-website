@@ -7,9 +7,13 @@ on:
     types:
       - completed
 jobs:
-  deploy:
-    name: SCP files to server
+  on-success:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
-      - name: SCP files via SSH key
-        uses: appleboy/scp-action@master
+      - run: echo 'The triggering workflow passed'
+  on-failure:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    steps:
+      - run: echo 'The triggering workflow failed'
