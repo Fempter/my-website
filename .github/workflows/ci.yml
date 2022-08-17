@@ -42,5 +42,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: 22
-          source: "/*"
-          target: "~/source"
+          source: /build/*
+          target: "~/"
