@@ -19,8 +19,7 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PASSWORD }}
-          port: 22
-          source: "my-app.jar"
+          source: "my-website.jar"
           target: "~/"
 
       - name: Start Service
