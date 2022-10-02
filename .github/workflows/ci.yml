@@ -42,5 +42,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: 22
-          source: build/libs/
+          source: "build/libs/my-website.jar"
           target: "/srv/myapp/"
