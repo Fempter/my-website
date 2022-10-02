@@ -26,7 +26,6 @@ jobs:
           java-version: '18'
           distribution: 'temurin'
       - uses: gradle/gradle-build-action@v2
-      - name: Build JAR
         with:
           gradle-version: wrapper
           arguments: bootJar --warning-mode all
