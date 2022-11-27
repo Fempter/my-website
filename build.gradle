@@ -1,15 +1,14 @@
 plugins {
-    id 'org.springframework.boot' version '2.7.+'
+    id 'org.springframework.boot' version '3.0.+'
+    id 'io.spring.dependency-management' version '1.+'
     id 'java'
     id 'idea'
 }
 
-apply plugin: 'io.spring.dependency-management'
-
 group = 'com.fempter'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = JavaVersion.VERSION_18
-targetCompatibility = JavaVersion.VERSION_18
+sourceCompatibility = JavaVersion.VERSION_19
+targetCompatibility = JavaVersion.VERSION_19
 
 repositories {
     mavenCentral()
@@ -24,7 +23,7 @@ dependencies {
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web'
     implementation group: 'org.springframework.boot', name: 'spring-boot-devtools'
 
-    implementation group: 'org.webjars', name: 'font-awesome', version: '6.1.2'
+    implementation group: 'org.webjars', name: 'font-awesome', version: '6.2.0'
 
     testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test'
 }
