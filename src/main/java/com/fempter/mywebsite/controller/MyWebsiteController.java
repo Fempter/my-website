@@ -1,5 +1,6 @@
 package com.fempter.mywebsite.controller;
 
+import com.fempter.mywebsite.service.EmailService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -14,6 +15,12 @@ import java.util.StringJoiner;
 public class MyWebsiteController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MyWebsiteController.class);
+
+    private final EmailService emailService;
+
+    public MyWebsiteController(EmailService emailService) {
+        this.emailService = emailService;
+    }
 
     @GetMapping("/")
     public String index(Model model) {
