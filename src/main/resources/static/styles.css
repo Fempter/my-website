@@ -74,17 +74,8 @@ h1, h2, h3, h4 {
     box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
 }
 
-form input, textarea {
-    padding: 5px;
-    border-radius: 5px;
-    width: 240px;
-}
-
-form input[type="submit"] {
-    width: 250px;
-}
-
 #submit-button-wrapper {
+    width: 250px;
     margin: 20px 0;
 }
 
@@ -99,6 +90,12 @@ form input[type="submit"] {
     justify-content: center;
     width: 350px;
     margin-left: 65%;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 a, a:visited, a:hover, a:active {
