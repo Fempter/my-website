@@ -17,7 +17,7 @@ function getAlertMessage() {
 }
 
 function validateEmail() {
-    //resource https://www.w3resource.com/javascript/form/email-validation.php
+    //source https://www.w3resource.com/javascript/form/email-validation.php
     return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.querySelector('#email')?.value)
 }
 
