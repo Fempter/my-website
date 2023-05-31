@@ -1,14 +1,11 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="MyWebsiteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+  <configuration default="false" name="MyWebsiteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
     <option name="ACTIVE_PROFILES" value="dev" />
-    <option name="ALTERNATIVE_JRE_PATH" value="temurin-20" />
+    <option name="ALTERNATIVE_JRE_PATH" value="temurin-19" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-    <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
     <module name="my-website.main" />
-    <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.fempter.mywebsite.MyWebsiteApplication" />
     <method v="2">
-      <option name="Gradle.BeforeRunTask" enabled="true" tasks="clean" externalProjectPath="$PROJECT_DIR$" vmOptions="" scriptParameters="--warning-mode all" />
       <option name="Make" enabled="true" />
     </method>
   </configuration>
