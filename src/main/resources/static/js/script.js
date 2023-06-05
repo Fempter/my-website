@@ -1,5 +1,5 @@
 function clickListener(event) {
-    event.preventDefault()
+    //event.preventDefault()
     const alertMessage = getAlertMessage()
     window.alert(alertMessage)
 }

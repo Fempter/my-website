@@ -19,47 +19,51 @@
     <h3>Java Software Developer</h3>
 </header>
 
-<hr class="breaking-line"/>
-<article id="about-me">
-    <section class="about-me-container" id="i-am">
-        <h3>I am</h3>
-        <ul class="about-list">
-            <li>An engineer</li>
-            <li>A programmer</li>
-            <li>A physicist</li>
-        </ul>
-    </section>
-    <section class="about-me-container" id="i-like">
-        <h3>I like to</h3>
-        <ul class="about-list">
-            <li>Meet new people</li>
-            <li>Play guitar</li>
-            <li>Travel</li>
-        </ul>
-    </section>
-</article>
-<hr class="breaking-line"/>
+<div id="about-me-contact-me">
+    <article id="about-me">
+        <hr class="breaking-line"/>
+        <div class="about-me-container">
+            <section id="i-am">
+                <h3>I am</h3>
+                <ul class="about-list">
+                    <li>An engineer</li>
+                    <li>A programmer</li>
+                    <li>A physicist</li>
+                </ul>
+            </section>
+            <section id="i-like">
+                <h3>I like to</h3>
+                <ul class="about-list">
+                    <li>Meet new people</li>
+                    <li>Play guitar</li>
+                    <li>Travel</li>
+                </ul>
+            </section>
+        </div>
+        <hr class="breaking-line"/>
+    </article>
 
-<aside id="contact-me">
-    <form action="#" id="send-message" method="post" th:action="@{/contact}" th:object="${message}">
-        <p>
-            Send me a message! <i aria-hidden="true" class="fa fa-envelope"></i>
-        </p>
-        <p class="input-field">Email:
-            <input id="email" placeholder="Enter your email" th:field="*{userEmail}" type="text"/>
-        </p>
-        <p class="input-field">Name:
-            <input id="name" placeholder="Enter your name" th:field="*{userName}" type="text"/>
-        </p>
-        <p class="input-field">Message:
-            <textarea id="message" placeholder="Your message" th:field="*{userMessage}"></textarea>
-        </p>
-        <p>
-            <input class="message-buttons" id="submit-button-wrapper" type="submit" value="Submit"/>
-            <input class="message-buttons" id="reset-button-wrapper" type="reset" value="Reset"/>
-        </p>
-    </form>
-</aside>
+    <aside id="contact-me">
+        <form action="#" id="send-message" method="post" th:action="@{/contact}" th:object="${message}">
+            <p>
+                Send me a message! <i aria-hidden="true" class="fa fa-envelope"></i>
+            </p>
+            <p class="input-field">Email:
+                <input id="email" placeholder="Enter your email" th:field="*{userEmail}" type="text"/>
+            </p>
+            <p class="input-field">Name:
+                <input id="name" placeholder="Enter your name" th:field="*{userName}" type="text"/>
+            </p>
+            <p class="input-field">Message:
+                <textarea id="message" placeholder="Your message" th:field="*{userMessage}"></textarea>
+            </p>
+            <p>
+                <input class="message-buttons" id="submit-button-wrapper" type="submit" value="Submit"/>
+                <input class="message-buttons" id="reset-button-wrapper" type="reset" value="Reset"/>
+            </p>
+        </form>
+    </aside>
+</div>
 
 <footer class="footer">
     <section class="links-container">
